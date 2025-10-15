@@ -180,9 +180,11 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     const fetchTranslations = async () => {
       setIsTranslationsLoading(true);
       try {
+        const enUrl = new URL('../locales/en.json', import.meta.url).href;
+        const faUrl = new URL('../locales/fa.json', import.meta.url).href;
         const [enRes, faRes] = await Promise.all([
-          fetch('./locales/en.json'),
-          fetch('./locales/fa.json')
+          fetch(enUrl),
+          fetch(faUrl)
         ]);
         if (!enRes.ok || !faRes.ok) {
           throw new Error(`HTTP error! status: ${enRes.status}, ${faRes.status}`);
