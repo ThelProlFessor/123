@@ -1,0 +1,563 @@
+
+{
+  "common": {
+    "add": "Add",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading...",
+    "page": "Page",
+    "of": "of",
+    "previous": "Previous",
+    "next": "Next",
+    "na": "N/A",
+    "clear": "Clear"
+  },
+  "info": {
+    "date": "Date",
+    "name": "Patient Name",
+    "id": "Patient ID"
+  },
+  "sidebar": {
+    "tools": "Tools",
+    "dashboard": "Dashboard",
+    "patients": "Patients",
+    "analysis": "Analysis & QC",
+    "worksheet": "Worksheet",
+    "history": "History",
+    "settings": "Settings",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "logout": "Logout",
+    "help": "Help"
+  },
+  "header": {
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening"
+    },
+    "user": "User",
+    "runsRemaining": {
+      "tooltip": "runs remaining",
+      "noLicense": "No active license. Go to Settings to activate one."
+    },
+    "lowRunsWarningTooltip": "Your analysis runs are low. Click for details."
+  },
+  "login": {
+    "welcome": "Welcome Back",
+    "signInMessage": "31 HPV Genotypes Real-Time PCR",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "e.g., admin",
+    "passwordLabel": "Password",
+    "signInButton": "Sign In",
+    "dbNotReady": "Database not ready, please wait.",
+    "invalidCredentials": "Invalid username or password.",
+    "helpButton": "Help"
+  },
+  "licenseGauge": {
+    "title": "License Status",
+    "remaining": "Analyses Remaining",
+    "tooltip": "{remaining} of {max} analyses remaining"
+  },
+  "notifications": {
+    "dbInitFailed": "Failed to initialize local database.",
+    "dbEngineFailed": "Failed to initialize database engine.",
+    "autoSaveFailed": "Automatic save failed. Please export your data manually.",
+    "dbExportSuccess": "Database exported successfully!",
+    "dbExportFailed": "Could not export the database file.",
+    "dbEngineNotReady": "Database engine not ready. Please try again.",
+    "dbImportSuccess": "Database '{fileName}' imported. The application will now reload.",
+    "dbImportFailed": "Could not load the database file. It may be corrupt.",
+    "dbNotReady": "Database is not yet ready. Please wait a moment.",
+    "appResetSuccess": "Application has been reset. The page will now reload.",
+    "appResetFailed": "Could not reset the database.",
+    "controlsUnlocked": "Controls unlocked.",
+    "translationLoadFailed": "Failed to load language files. Some text may not appear correctly.",
+    "noTestsRemaining": "No analysis runs remaining. Please activate a new license in Settings.",
+    "license": {
+      "activated": "License activated! You have {count} analysis runs.",
+      "invalid": "Invalid license key: {error}",
+      "empty": "License key cannot be empty.",
+      "invalidFormat": "Invalid format. Must be AP-XXXXX-RAD.",
+      "invalidChars": "Code contains invalid characters.",
+      "invalidChecksum": "License key is not valid (checksum failed).",
+      "zeroTests": "A license key cannot be for zero tests.",
+      "saveFailed": "Failed to save the license key to the database.",
+      "updateFailed": "Failed to update the remaining test count.",
+      "alreadyUsed": "This license key has already been used.",
+      "alreadyUsedOnDevice": "This license key has already been used on this device and cannot be used again.",
+      "invalidLotFormat": "Invalid Lot Number format. Please check the number and try again.",
+      "activationComplete": "Activation successful! {count} tests have been added for the '31 HPV Genotypes Real-Time PCR Kit'."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "dateRanges": {
+      "today": "Today",
+      "d7": "Last 7 Days",
+      "d30": "Last 30 Days",
+      "all": "All Time"
+    },
+    "from": "From",
+    "to": "To",
+    "kpi": {
+      "totalSamples": "Total Samples Processed",
+      "positiveResults": "Positive Results",
+      "negativeResults": "Negative Results",
+      "positivityRate": "{rate}% Positivity Rate",
+      "qcStatus": "Overall QC Status",
+      "qcSubtitle": "Based on last run",
+      "qcValue": "Passed"
+    },
+    "charts": {
+      "trendsTitle": "Sample Analysis Trends",
+      "resultDistributionTitle": "Result Distribution",
+      "totalSamples": "Total Samples",
+      "positiveResults": "Positive Results",
+      "negativeResults": "Negative Results",
+      "positive": "Positive",
+      "negative": "Negative",
+      "date": "Date",
+      "noDataPeriod": "No data available for the selected period."
+    },
+    "loading": "Loading dashboard data..."
+  },
+  "patients": {
+    "title": "Patients",
+    "configureRunCard": {
+      "title": "1. Configure Run",
+      "platformLabel": "PCR Platform",
+      "patientIdLabel": "Patient ID",
+      "patientIdPlaceholder": "Enter Patient ID...",
+      "controlsLabel": "Include Controls",
+      "positiveControl": "Positive Control",
+      "negativeControl": "Negative Control",
+      "ntcControl": "NTC Control",
+      "generateButton": "Generate Rotor-Gene File"
+    },
+    "patientSamplesCard": {
+      "title": "2. Patient Samples in Run",
+      "searchPlaceholder": "Search by patient name...",
+      "removeSelected": "Remove Selected",
+      "clearAll": "Clear All",
+      "noSamples": "No patient samples added yet.",
+      "noSearchResults": "No patients match your search."
+    },
+    "table": {
+      "number": "#",
+      "patientId": "Patient ID"
+    },
+    "modal": {
+      "title": "Confirm Run Layout",
+      "message": "This is the final list of {count} samples that will be written to the file. Please review it before continuing.",
+      "downloadButton": "Confirm & Download"
+    },
+    "notifications": {
+      "limitReached": "Cannot add more samples. The device limit has been reached.",
+      "emptyId": "Patient ID cannot be empty.",
+      "runLimitExceeded": "Generated run has {count} samples, exceeding the {limit} limit.",
+      "emptyRun": "Cannot generate an empty run file. Please add patients or include controls.",
+      "generateSuccess": "File generated successfully!",
+      "generateFail": "Could not download the file.",
+      "noPatientsOrControls": "Cannot generate a run with no patients and no controls selected."
+    }
+  },
+  "analysis": {
+    "title": "Analysis & QC",
+    "uploadCard": {
+      "title": "1. Upload CSV",
+      "dragDrop": "Drag and drop your CSV/TXT file here",
+      "fileType": "or click to select a file",
+      "fileHint": "CSV or TXT files only"
+    },
+    "remainingTests": "{count} analysis runs remaining",
+    "buttons": {
+      "process": "Process File",
+      "processing": "Processing...",
+      "generateReport": "Generate Report",
+      "saveToHistory": "Save to History"
+    },
+    "reconciliationCard": {
+      "title": "3. Reconciliation & Results",
+      "description": "Review the processed data below. Matched samples are linked to patient IDs from the 'Patients' page. Select rows to include them in reports or save them to history."
+    },
+    "qcCheck": {
+      "title": "2. Quality Control Check",
+      "enable": "Enable QC Check",
+      "on": "Enable",
+      "off": "Disable",
+      "status": "QC Status",
+      "passed": "Passed",
+      "failed": "Failed",
+      "issuesFound": "{count} issues were found:",
+      "waiting": "Process a file with QC Check enabled to see results.",
+      "checking": "Checking QC...",
+      "passedMessage": "All quality control checks were successful.",
+      "posCtFail": "Positive Control failed: Ct value is above 35 or not detected.",
+      "posCtFailDetail": "Positive Control '{name}' in channel '{channel}' has Ct '{ct}'.",
+      "negCtFail": "Negative Control failed: Amplification detected.",
+      "negCtFailDetail": "Negative Control in channel '{channel}' shows detection (Ct: {ct}).",
+      "ntcCtFail": "NTC failed: Amplification detected.",
+      "ntcCtFailDetail": "NTC in channel '{channel}' shows detection (Ct: {ct}).",
+      "icFail": "Internal Control failed: Ct value is above 35 or not detected.",
+      "icFailDetail": "Internal Control for sample '{name}' has Ct '{ct}'."
+    },
+    "table": {
+      "sampleName": "Sample Name (from CSV)",
+      "status": "Status",
+      "matchedPatient": "Matched Patient",
+      "highRisk": "High-Risk",
+      "lowRisk": "Low-Risk"
+    },
+    "statuses": {
+      "matched": "Matched",
+      "unmatched": "Unmatched",
+      "control": "Control"
+    },
+    "notifications": {
+      "selectFile": "Please select a file first.",
+      "processSuccess": "Successfully processed and consumed runs for {count} unique samples.",
+      "processError": "An unknown error occurred during processing.",
+      "noDataInCsv": "No data blocks found in the CSV. Please ensure the file contains 'Quantitative analysis' sections.",
+      "noNameColumn": "Could not find a 'Name' or 'Sample Name' column in the CSV data blocks. Processing cannot continue.",
+      "selectSampleForReport": "Please select at least one sample to include in the report.",
+      "reportSuccess": "{selectedCount} samples included in report and results saved for {patientCount} patients.",
+      "reportSuccessNoTest": "Report generated for {selectedCount} samples, but failed to update test count. Please check license.",
+      "popupBlocked": "Could not open a new tab for the report. Please check your browser's pop-up settings.",
+      "invalidFileType": "Invalid file type. Please upload a .csv or .txt file.",
+      "noFile": "Please select a file to process.",
+      "processFail": "File processing failed. Please check the file format.",
+      "qcFailed": "Quality Control checks failed. Please review the issues.",
+      "noRowsForReport": "Please select at least one row to generate a report.",
+      "reportFail": "Failed to generate the report.",
+      "noRowsForHistory": "Please select at least one row to save to history.",
+      "historySaveSuccess": "{count} records saved to history successfully.",
+      "historySaveFail": "Failed to save records to history.",
+      "notEnoughTestsRemaining": "Not enough analysis runs remaining. This file requires {count} runs, but you only have {remaining} left.",
+      "noSamplesInFile": "No patient or control samples were found in the provided file.",
+      "selectionRequired": "File has {count} samples but you have only {remaining} runs. Please select samples to analyze.",
+      "emptyFile": "The selected file is empty and cannot be processed.",
+      "invalidRotorGeneFile": "The file does not appear to be a valid Rotor-Gene results file. Required 'Quantitative analysis' sections are missing."
+    },
+    "report": {
+      "title": "HPV Analysis Summary Report",
+      "generatedDate": "Date Generated",
+      "print": "Print Report",
+      "sampleName": "Sample Name",
+      "status": "Status",
+      "matchedPatient": "Matched Patient",
+      "overallHPV": "Overall HPV",
+      "hrStatus": "High-Risk Status",
+      "hrGenotypes": "HR Genotypes",
+      "lrStatus": "LR Status",
+      "lrGenotypes": "LR Genotypes",
+      "detected": "Detected",
+      "notDetected": "Not Detected",
+      "none": "None"
+    }
+  },
+  "history": {
+    "title": "Patient History",
+    "searchPlaceholder": "Search by Patient Name or ID...",
+    "table": {
+      "patientName": "Patient Name",
+      "date": "Date of Record",
+      "hpvStatus": "HPV Status",
+      "highRisk": "High-Risk",
+      "lowRisk": "Low-Risk"
+    },
+    "loading": "Loading history...",
+    "noResults": "No records match your search.",
+    "noHistory": "No history records found in the database.",
+    "modal": {
+      "title": "Record Details",
+      "patientName": "Patient Name",
+      "patientId": "Patient ID",
+      "date": "Date of Record",
+      "overallStatus": "Overall HPV Status",
+      "hrStatus": "High-Risk Status",
+      "hrGenotypes": "High-Risk Genotypes",
+      "lrStatus": "Low-Risk Status",
+      "lrGenotypes": "Low-Risk Genotypes",
+      "none": "None",
+      "detailedGenotypes": "Detailed Genotype Results",
+      "genotype": "Genotype",
+      "ctValue": "Ct Value",
+      "riskType": "Risk Type",
+      "highRisk": "High-Risk",
+      "lowRisk": "Low-Risk"
+    }
+  },
+  "worksheet": {
+    "savedResultsTitle": "Saved Patient Results",
+    "selectAll": "Select All",
+    "export": "Export Report",
+    "exportCombined": "Export Combined (View)",
+    "exportIndividual": "Export Individual (Download)",
+    "noPatients": "No analyzed patients found.",
+    "previewTitle": "Report Preview",
+    "worksheetFor": "Editing Report Info for: {name}",
+    "noSelectionMessage": "Select one or more patients from the list on the left to edit their report information and generate a professional analysis report.",
+    "reportInfoTitle": "Report Information",
+    "reportInfoDescription": "The information entered here will be used for the exported report. It can be different from the original record.",
+    "mainTitle": "HPV Genotyping Worksheet",
+    "patientInfo": "Patients Information",
+    "mix": "Mix",
+    "finalResult": "Final Result",
+    "report": {
+      "pageTitle": "HPV Genotyping Report",
+      "labName": "Molecular Diagnostics Laboratory",
+      "title": "HPV Analysis Report for {name}",
+      "mainTitle": "HPV Genotype Analysis Report",
+      "subtitle": "Results from 31 HPV Genotypes Real-Time PCR Kit",
+      "patientInfoTitle": "Patient & Specimen Information",
+      "specimenId": "Specimen ID",
+      "reportDate": "Report Date",
+      "resultsTitle": "Analysis Results",
+      "overallDetection": "Overall HPV Detection",
+      "print": "Print Report",
+      "signature": "Signature",
+      "labDirector": "Lab Director",
+      "summaryTitle": "Summary of Results",
+      "hpvDna": "HPV DNA",
+      "detectedGenotypesTitle": "Detected Genotypes",
+      "highRiskTitle": "High Risk Genotypes",
+      "lowRiskTitle": "Low Risk Genotypes",
+      "detailedTitle": "Detailed Genotyping Results",
+      "interpretationTitle": "Interpretation",
+      "interpretationText1": "This assay detects 31 different genotypes of Human Papillomavirus (HPV). The results should be interpreted in the context of the patient's clinical history and other diagnostic findings.",
+      "interpretationText2": "The presence of High-Risk (HR) HPV DNA is associated with an increased risk for developing cervical cancer and other HPV-related cancers. Regular follow-up is recommended as per clinical guidelines.",
+      "interpretationText3": "The absence of HPV DNA indicates a very low current risk for cervical pre-cancer or cancer.",
+      "methodologyTitle": "Methodology",
+      "methodologyText": "Qualitative detection of 31 HPV genotypes by Real-Time Polymerase Chain Reaction (PCR).",
+      "endOfReport": "End of Report",
+      "verifiedBy": "Verified by",
+      "interpretation": {
+        "hr_16_18": "High-Risk HPV genotypes 16 and/or 18 were detected. These genotypes are associated with the highest risk for cervical cancer. Colposcopy is recommended.",
+        "hr_other": "High-Risk HPV genotypes other than 16/18 were detected. This indicates an increased risk for cervical disease. Follow-up is recommended according to clinical guidelines.",
+        "lr_only": "Low-Risk HPV genotypes were detected. High-Risk genotypes were not detected. These types are not associated with cervical cancer but can cause genital warts.",
+        "negative": "No High-Risk or Low-Risk HPV genotypes were detected. The risk for cervical pre-cancer is very low."
+      },
+      "testName": {
+        "amplification": "HPV Amplification (PCR)",
+        "lowRisk": "HPV Low risk Genotyping",
+        "medHighRisk": "HPV Medium & High risk Genotyping"
+      }
+    },
+    "info": {
+      "date": "Report Date",
+      "name": "Patient Name",
+      "id": "Patient ID"
+    },
+    "result": {
+      "nonDetected": "Non-Detected",
+      "hrDetected": "High-risk Detected",
+      "lrDetected": "Low-risk Detected",
+      "detectedGenotypes": "Detected HPV Genotype:"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "languageCard": {
+      "title": "Language Settings",
+      "english": "English",
+      "persian": "فارسی (Persian)"
+    },
+    "license": {
+      "title": "License Management",
+      "statusTitle": "Current Status",
+      "runsRemaining": "Runs Remaining",
+      "noLicense": "No active license. Analysis feature is disabled.",
+      "enterKey": "Enter License Key",
+      "activateButton": "Activate",
+      "lotModalTitle": "Confirm Lot Number",
+      "lotModalMessage": "Please enter the LOT number from the kit to finalize activation.",
+      "lotNumberPlaceholder": "Enter Lot Number...",
+      "confirmActivationButton": "Confirm & Activate",
+      "kitNameMessage": "The lot number corresponds to the 31 HPV Genotypes Real-Time PCR Kit.",
+      "activationSuccessTitle": "Activation Successful"
+    },
+    "userManagement": {
+      "title": "User Management",
+      "existingUsers": "Existing Users",
+      "noUsers": "No other users found.",
+      "resetPassword": "Reset Password",
+      "removeUser": "Remove User",
+      "addUser": "Add New User",
+      "username": "Username",
+      "password": "Password (min 8 characters)",
+      "addUserButton": "Add User",
+      "notifications": {
+        "emptyFields": "Username and password cannot be empty.",
+        "passwordTooShort": "Password must be at least 8 characters long.",
+        "userAdded": "User '{username}' added successfully.",
+        "userExists": "Username '{username}' already exists.",
+        "userRemoved": "User '{username}' removed successfully.",
+        "passwordReset": "Password for '{username}' has been reset."
+      },
+      "modals": {
+        "removeTitle": "Confirm User Deletion",
+        "removeMessage": "Are you sure you want to permanently delete the user '{username}'? This action cannot be undone.",
+        "resetTitle": "Confirm Password Reset",
+        "resetMessage": "Are you sure you want to reset the password for '{username}'? The new password will be '{password}'.",
+        "resetButton": "Reset Password"
+      }
+    },
+    "dbManagement": {
+      "title": "Database Management",
+      "description": "Your data is saved automatically. Use these options to backup, restore, or reset your application data.",
+      "backupRestore": "Backup & Restore",
+      "backupRestoreDesc": "Save a `.sqlite` file or upload one to replace current data.",
+      "importButton": "Import...",
+      "exportButton": "Export...",
+      "resetApp": "Reset Application",
+      "resetAppDesc": "This will permanently delete all data.",
+      "resetButton": "Reset Data",
+      "modals": {
+        "importTitle": "Confirm Database Import",
+        "importMessage": "Are you sure you want to import '{fileName}'? This will overwrite all current data and reload the application.",
+        "importButton": "Import & Overwrite",
+        "resetTitle": "Confirm Application Reset",
+        "resetMessage": "Are you sure you want to reset the application? All users, history, and settings will be permanently deleted. This action cannot be undone.",
+        "resetButton": "Reset Application"
+      }
+    },
+    "appSettings": {
+      "title": "Application Settings",
+      "version": "Version",
+      "versionInfo": "8.0 (Rotor-Gene Only)",
+      "deviceLimit": "Device Limit (Rotor-Gene)",
+      "deviceLimitInfo": "{limit} Samples",
+      "customLogos": "Custom Logos",
+      "unlockButton": "Unlock to Change Logos",
+      "lightLogo": "Light Theme Logo",
+      "darkLogo": "Dark Theme Logo",
+      "noLogo": "No Logo",
+      "change": "Change",
+      "upload": "Upload",
+      "remove": "Remove",
+      "logoSize": "Logo Height",
+      "logoSpecs": "Recommended: Max width 220px. Height is adjustable. Limit: 2MB.",
+      "passwordModal": {
+        "title": "Enter Password",
+        "message": "Please enter the password to make changes to the logos.",
+        "placeholder": "Password",
+        "incorrect": "Incorrect password. Please try again.",
+        "submit": "Submit"
+      },
+      "notifications": {
+        "fileTooLarge": "File is too large. Please select an image smaller than 2MB.",
+        "logoUpdated": "{theme} theme logo updated successfully!",
+        "fileReadError": "An error occurred while reading the file.",
+        "logoRemoved": "Custom logo for {theme} theme has been removed."
+      }
+    },
+    "labInfo": {
+      "title": "Laboratory Information",
+      "distributorTitle": "Distributor Information",
+      "userLabTitle": "Your Laboratory Information",
+      "saveButton": "Save Lab Info",
+      "notifications": {
+        "saveSuccess": "Laboratory information saved successfully."
+      },
+      "fields": {
+        "labName": "Laboratory Name",
+        "labDirector": "Laboratory Director",
+        "labContact": "Contact Number",
+        "labAddress": "Address"
+      },
+      "distributor": {
+        "name": "Amir Peyvand Co.",
+        "phones": [
+          "+98-902-432-2413",
+          "+98-21-22920776",
+          "+98-21-22920777"
+        ],
+        "fax": "+98-21-26422730",
+        "email": "order@co.ap-rad.com",
+        "website": "https://ap-rad.com/",
+        "address": "Unit 1, 3rd Floor, No. 148 (Baharan Bldg.), Zafar St., Shariati St., Tehran, Iran"
+      },
+      "labels": {
+          "phone": "Phone",
+          "fax": "Fax",
+          "email": "Email",
+          "website": "Website",
+          "address": "Address"
+      }
+    }
+  },
+  "helpModal": {
+    "title": "Application Help",
+    "workflow": {
+      "title": "Application Workflow",
+      "step1_title": "1. Configure Run",
+      "step1_page": "Patients Page",
+      "step2_title": "2. Analyze Results",
+      "step2_page": "Analysis & QC Page",
+      "step3_title": "3. Save & View",
+      "step3_pages": "History & Worksheet"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "content": "The dashboard provides an overview of your sample analysis data over time. You can filter by date ranges (today, last 7 days, last 30 days, all time, or a custom range) to view key performance indicators (KPIs) like total sample counts, positive/negative results, and overall positivity rate. The charts help you visualize analysis trends and result distributions."
+    },
+    "patients": {
+      "title": "Patients Page",
+      "content": "This is the first step for setting up a new analysis run.\n1. **Configure Run:** Enter a unique Patient ID into the input field and click 'Add'. The patient will be added to the list on the right. You can also select which control samples (Positive, Negative, NTC) to include in the run.\n2. **Patient Samples:** This list shows all patients you have added for the current run. You can reorder them via drag-and-drop and remove samples by selecting their checkbox and clicking 'Remove Selected'.\n3. **Generate File:** Once your list is ready, click 'Generate Rotor-Gene File'. A confirmation modal will show you the final sample layout. Upon confirmation, a .smp file will be downloaded, which you can load into your Rotor-Gene machine."
+    },
+    "analysis": {
+      "title": "Analysis & QC Page",
+      "content": "This is where you process the results from your PCR machine.\n1. **Upload CSV:** Drag and drop (or click to select) the CSV or TXT file exported from your Rotor-Gene software. Your remaining number of tests (from your license) is shown here.\n2. **Quality Control (QC):** If enabled, the software will automatically check your control samples (Positive, Negative, NTC, and Internal Controls) for common issues. Any errors will be listed here.\n3. **Reconciliation & Results:** The software reads your CSV, analyzes the data, and displays the results. 'Matched' samples are those that were in your patient list on the 'Patients' page. You can select rows and then click 'Generate Report' to create a printable HTML summary, or 'Save to History' to permanently store the results in the application's database."
+    },
+    "worksheet": {
+      "title": "Worksheet Page",
+      "content": "This page allows you to view and print detailed worksheets for patients whose results you have saved to history.\n1. **Select Patients:** On the left, you will see a list of all patients with saved results. Check the box next to one or more patients to display their worksheets on the right.\n2. **Edit Information:** You can edit the patient's name, ID, and date format directly on the worksheet for reporting purposes. These changes are temporary and only for the exported file.\n3. **Export:** After selecting patients, use the 'Export' button to download the worksheets as HTML files. You can choose to download all selected worksheets in a single combined file or as individual files for each patient."
+    },
+    "history": {
+      "title": "History Page",
+      "content": "This page provides a searchable, paginated table of all patient results that have been saved to the database from the Analysis page. You can search for a patient by name or ID. Clicking on any row will open a detailed view showing all information for that specific record, including the detected genotypes."
+    },
+    "settings": {
+      "title": "Settings Page",
+      "content": "This page allows you to configure the application.\n- **User Management:** Add or remove user accounts and reset user passwords.\n- **Language Settings:** Switch the application's user interface between English and Persian.\n- **License Management:** View your current license status (runs remaining) and activate new license keys.\n- **Database Management:** Export a backup of your entire application database (users, history, settings) or import a backup file to restore data. You can also reset the application to its factory state (this deletes all data).\n- **Application Settings:** View application version info and customize the logos for the light and dark themes (this requires a password)."
+    }
+  },
+  "lowRunsModal": {
+    "title": "Ensure Your Lab's Continuity",
+    "message": "Your license for the AP-RAD 31 HPV Genotypes Kit is running low. To ensure uninterrupted workflow and maintain consistent, reliable results for your patients, order a new batch today.",
+    "contactTitle": "Contact Information for Ordering",
+    "benefits": [
+      "High-precision results for confident diagnostics.",
+      "Fast turnaround times to improve patient care.",
+      "Expert technical support from our specialists."
+    ],
+    "company": {
+      "name": "Amir Peyvand Co.",
+      "phones": [
+        "+98-902-432-2413",
+        "+98-21-22920776",
+        "+98-21-22920777"
+      ],
+      "fax": "+98-21-26422730",
+      "email": "order@co.ap-rad.com",
+      "website": "https://ap-rad.com/",
+      "address": "Unit 1, 3rd Floor, No. 148 (Baharan Bldg.), Zafar St., Shariati St., Tehran, Iran"
+    },
+    "phone": "Phone",
+    "fax": "Fax",
+    "email": "Email",
+    "website": "Website",
+    "address": "Address",
+    "ctaButton": "Order Online"
+  },
+  "sampleSelectionModal": {
+    "title": "Select Samples to Analyze",
+    "message": "Your file contains {total} samples, but you only have {remaining} analysis runs left. Please select up to {remaining} samples from the list below to proceed.",
+    "selectedCount": "Selected: {selected} of {limit}",
+    "confirmButton": "Analyze {count} Selected Samples"
+  }
+}

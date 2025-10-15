@@ -1,0 +1,5 @@
+{
+  "name": "Copy of HPV Analysis Suite2",
+  "description": "A web-based suite for configuring and generating sample run files for HPV analysis on Rotor-Gene PCR platforms. It allows users to manage patient lists, add controls, and export configuration files.",
+  "requestFramePermissions": []
+}
